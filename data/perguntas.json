@@ -1,0 +1,365 @@
+[
+  {
+    "id": "001C",
+    "question_text": "De 0 a 100, qual a chance de chover em Recife(Rosa) abaixo de 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      "Recife"
+    ],
+    "answer": 47,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "002C",
+    "question_text": "De 0 a 100, qual a chance de chover em Jaboatão dos Guararapes(Rosa) acima de 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      "Jaboatão dos Guararapes"
+    ],
+    "answer": 42,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "003C",
+    "question_text": "De 0 a 100, qual a chance de chover em São Lourenço da Mata(Rosa)  entre 50 e 150mm?",
+    "op": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "highlights": [
+      "São Lourenço da Mata"
+    ],
+    "answer": 33,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "004C",
+    "question_text": "Entre Ipojuca(Rosa) e Cabo de Santo Agostinho(Azul), qual das duas cidades é mais provável de chover menos que 100mm?",
+    "op": [
+    ],
+    "highlights": [
+      "Ipojuca",
+      "Cabo de Santo Agostinho"
+    ],
+    "answer": "Ipojuca",
+    "distance": "Short",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "005C",
+    "question_text": "De 0 a 100, qual é a chance de chover menos em Ipojuca(Rosa) do que no Cabo de Santo Agostinho(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      "Ipojuca",
+      "Cabo de Santo Agostinho"
+    ],
+    "answer": "66",
+    "distance": "Short",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "006C",
+    "question_text": "De 0 a 100, qual é a chance de chover menos em Recife(Rosa) do que em Santa Cruz(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      "Recife",
+      "Santa Cruz"
+    ],
+    "answer": "15",
+    "distance": "Long",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "007C",
+    "question_text": "De 0 a 100, qual é a chance de chover menos em Jataúba(Rosa) do que em Petrolândia(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      "Jataúba",
+      "Petrolândia"
+    ],
+    "answer": "64",
+    "distance": {},
+    "variance": "Low",
+    "size": {}
+  },
+  {
+    "id": "008C",
+    "question_text": "De 0 a 100, qual é a chance de chover menos em Tacaratú(Rosa) do que em Araripina(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      "Tacaratu",
+      "Araripina"
+    ],
+    "answer": "48",
+    "distance": {},
+    "variance": "High",
+    "size": {}
+  },
+  {
+    "id": "009C",
+    "question_text": "De 0 a 100, qual é a chance de chover menos em Saloá(Rosa) do que em Pombos(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      "Saloá",
+      "Pombos"
+    ],
+    "answer": "56",
+    "distance": {},
+    "variance": {},
+    "size": "Small"
+  },
+  {
+    "id": "010C",
+    "question_text": "De 0 a 100, qual é a chance de chover menos em Sertânia(Rosa) do que em Parnamirim(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      "Sertânia",
+      "Parnamirim"
+    ],
+    "answer": "53",
+    "distance": {},
+    "variance": {},
+    "size": "Large"
+  },
+  {
+    "id": "011C",
+    "question_text": "Escreva o nome da cidade que tem a maior probabilidade de chover abaixo de 100mm?",
+    "op": [
+      ""
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Jatobá",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "012C",
+    "question_text": "Escreva o nome da cidade que tem a menor probabilidade de chover abaixo de 100mm?",
+    "op": [
+      ""
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Amaraji",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "013C",
+    "question_text": "Estime qual a média de chuvas na cidade de Caruaru(Rosa)?",
+    "op": [
+      ""
+    ],
+    "highlights": [
+      "Caruaru"
+    ],
+    "answer": 50,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+    {
+    "id": "014T",
+    "question_text": "De 0 a 100, qual a chance de o número de táxis na área West Chelsea/Hudson Yards(Rosa) ser menor que 18000?",
+    "op": [
+    ],
+    "highlights": [
+      246
+    ],
+    "answer": 75,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "015T",
+    "question_text": "De 0 a 100, qual a chance de o número de táxis na área West Chelsea/Hudson Yards(Rosa) ser superior a 35000?",
+    "op": [
+    ],
+    "highlights": [
+      246
+    ],
+    "answer": 83,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "016T",
+    "question_text": "De 0 a 100, qual a chance de o número de táxis na área Times Sq/Theatre District(Rosa) estar entre 18000 e 35000?",
+    "op": [
+    ],
+    "highlights": [
+      230
+    ],
+    "answer": 33,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+    {
+    "id": "017T",
+    "question_text": "Entre Midtown South(Rosa) e Murray Hill(Azul), qual das duas áreas é mais provável que o número de corridas de táxi seja menor que 27000?",
+    "op": [
+    ],
+    "highlights": [
+      164,
+      170
+    ],
+    "answer": "Midtown South",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "018T",
+    "question_text": "De 0 a 100, qual é a chance do número de corridas de táxi em Midtown South(Rosa) ser menor que Murray Hill(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      164,
+      170
+    ],
+    "answer": "0",
+    "distance": "Short",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "019T",
+    "question_text": "De 0 a 100, qual é a chance do número de corridas de táxi em West Village(Rosa) ser menor que Upper East Side South(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      249,
+      237
+    ],
+    "answer": "0",
+    "distance": "Long",
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "020T",
+    "question_text": "De 0 a 100, qual é a chance do número de corridas de táxi em Lenox Hill West(Rosa) ser menor que Gramercy(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      141,
+      107
+    ],
+    "answer": "84",
+    "distance": {},
+    "variance": "Low",
+    "size": {}
+  },
+  {
+    "id": "021T",
+    "question_text": "De 0 a 100, qual é a chance do número de corridas de táxi em West Village(Rosa) ser menor que Murray Hill(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      249,
+      170
+    ],
+    "answer": "92",
+    "distance": {},
+    "variance": "High",
+    "size": {}
+  },
+  {
+    "id": "022T",
+    "question_text": "De 0 a 100, qual é a chance do número de corridas de táxi no Central Park(Rosa) ser menor que em Greenwich Village North(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      43,
+      113
+    ],
+    "answer": "75",
+    "distance": {},
+    "variance": {},
+    "size": "Small"
+  },
+  {
+    "id": "023T",
+    "question_text": "De 0 a 100, qual é a chance do número de corridas de táxi em Clinton East(Rosa) ser menor que em East Chelsea(Azul)?",
+    "op": [
+    ],
+    "highlights": [
+      48,
+      68
+    ],
+    "answer": "0",
+    "distance": {},
+    "variance": {},
+    "size": "Large"
+  },
+  {
+    "id": "024T",
+    "question_text": "Digite o nome da área com maior probabilidade de ter um número de corrida de táxi maior que 34000?",
+    "op": [
+      ""
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Penn Station/Madison Sq West",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "025T",
+    "question_text": "Digite o nome da área com menor probabilidade de ter um número de corrida de táxi maior que 14000?",
+    "op": [
+      ""
+    ],
+    "highlights": [
+      ""
+    ],
+    "answer": "Stuy Town/Peter Cooper Village",
+    "distance": {},
+    "variance": {},
+    "size": {}
+  },
+  {
+    "id": "026T",
+    "question_text": "Estime qual é o número médio de corridas de táxi na área Gramercy(Rosa)?",
+    "op": [
+      ""
+    ],
+    "highlights": [
+      107
+    ],
+    "answer": 25000,
+    "distance": {},
+    "variance": {},
+    "size": {}
+  }
+]
