@@ -206,7 +206,7 @@ $(document).ready(function () {
     });
     // FUNÇÃO PARA GARANTIR QUE O VALOR ESCOLHIDO NO SLIDER SEJA COLOCADO NO INPUT CORRETO DO FORM.
     $(".ioRangerSlider").ionRangeSlider({
-		min: 0,
+		min: 1,
         max: 5,
         skin: "big",
         grid: true,
