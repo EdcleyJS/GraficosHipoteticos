@@ -9,8 +9,8 @@ mapMedia.doubleClickZoom.disable();
 mapMedia.scrollWheelZoom.disable();
 mapVis04.doubleClickZoom.disable();
 mapVis04.scrollWheelZoom.disable();
-mapVistaxi.scrollWheelZoom.disable();
-mapVistaxi.doubleClickZoom.disable();
+mapTaxi.scrollWheelZoom.disable();
+mapTaxi.doubleClickZoom.disable();
 var infoMedia = L.control();
 
 //-- MAPA DE MÉDIA COM ANIMAÇÃO DA ETAPA DE PERGUNTAS AO USUÁRIO. --
