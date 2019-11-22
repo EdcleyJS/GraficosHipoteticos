@@ -1,5 +1,6 @@
 var arr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],clicks=0,d1 = new Date(),stepper1,stepper2,stepper3,stepper4,d4,list,d2,diff,post_url,request_method,form_data,forms;
 var novodataset,database,dataset,databasetaxi,datasettaxi;
+var tempoinicial=new Date(),tempofinal,tempotutorial,duracaoPerguntas,duracaotutorial,duracao;
 d3.json("./data/perguntas.json",function(error,data){
 	novodataset=data;
 });
@@ -319,6 +320,9 @@ $(document).ready(function () {
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else{
 			   	opcoes=[];
+			   	if($(this).parent().parent().hasClass('was-validated')){
+					$(this).parent().parent()[0].classList.remove("was-validated");
+				}
 			   	stepper4.next();
 			   	var id= $(this).parent().next().find('div >div > div> ').siblings()[0].id;
 			   	var base=id.substring(3,4);
@@ -339,13 +343,10 @@ $(document).ready(function () {
 					mapTaxi.invalidateSize();
 					inicioTaxi(datasettaxi);
 				}
-				if($(this).parent().parent().hasClass('was-validated')){
-					$(this).parent().parent()[0].classList.remove("was-validated");
-				}
 				$(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
 				d2 = new Date();
-				diff = Math.abs(d1-d2);
-				$(this).parent().find('.form-group > div >.tempo')[0].value = (Math.round(diff/60));
+				diff = Math.abs(d1-d2)/1000;
+				$(this).parent().find('.form-group > div >.tempo')[0].value = (Math.round((diff/60)*100)/100);
 				clicks=-1;
 				d1 = new Date();		
 			}
@@ -360,6 +361,10 @@ $(document).ready(function () {
 				}
 			// PREPARA E INICIA A ETAPA DE PERGUNTAS PÓS TUTORIAL
 			}else if($(this)[0].id=='btuto10'){
+				tempotutorial= new Date();
+				duracaotutorial= tempotutorial-tempoinicial;
+				duracaotutorial= math.round(((duracaotutorial/1000)/60)*100)/100;
+
 				alpha=0;
 				left=60;
 				right=100;
@@ -414,9 +419,9 @@ $(document).ready(function () {
 			$(this).parent().parent()[0].classList.add('was-validated');
 		}else{
 			d2 = new Date();
-			diff = Math.abs(d1-d2);
+			diff = Math.abs(d1-d2)/1000;
 			var ent= $(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
-			var ent= $(this).parent().find('.form-group > div >.tempo')[0].value = (Math.round(diff/60));
+			var ent= $(this).parent().find('.form-group > div >.tempo')[0].value = (Math.round((diff/60)*100)/100);
 			$('#pills-tab > li> a.active').parent().next()[0].classList.remove("disabled");
 			$('#pills-tab > li> a.active').parent().next().find('a').click();
 			$('#pills-tab > li> a.active').parent().prev()[0].classList.add("disabled");
@@ -438,7 +443,7 @@ $(document).ready(function () {
 			    success: function(result, status, request){
 			        console.log(nameform.id+" Estado atual ---\n" + status + "\nResultado: " + JSON.stringify(result));
 			        sucesso++;
-			    	refresh();
+			    	//refresh();
 			        //end=true;
 			    },
 			    error: function (request, status, erro) {
