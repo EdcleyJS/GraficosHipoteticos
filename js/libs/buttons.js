@@ -368,6 +368,7 @@ $(document).ready(function () {
 				alpha=0;
 				left=60;
 				right=100;
+
 				clicks=0;
 				//if(pontos!= undefined){
 				//	pontos.clearLayers();
@@ -443,7 +444,7 @@ $(document).ready(function () {
 			    success: function(result, status, request){
 			        console.log(nameform.id+" Estado atual ---\n" + status + "\nResultado: " + JSON.stringify(result));
 			        sucesso++;
-			    	//refresh();
+			    	refresh();
 			        //end=true;
 			    },
 			    error: function (request, status, erro) {
