@@ -315,7 +315,7 @@ $(document).ready(function () {
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else if($('input[name='+ent+']').val()==""&& $('input[name='+ent+']').hasClass('custom-control-input')==false){
 				$(this).parent().parent()[0].classList.add('was-validated');
-			}else if($('#'+entid).val()==undefined){
+			}else if($('#'+entid).val()==undefined && $('#'+entid).children().length>0){
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else{
 			   	opcoes=[];
@@ -342,10 +342,10 @@ $(document).ready(function () {
 				if($(this).parent().parent().hasClass('was-validated')){
 					$(this).parent().parent()[0].classList.remove("was-validated");
 				}
-				$(this).parent().find('.form-group > div > ').siblings()[1].value = clicks;
+				$(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
 				d2 = new Date();
 				diff = Math.abs(d1-d2);
-				$(this).parent().find('.form-group > div > ').siblings()[2].value = (Math.round(diff/60));
+				$(this).parent().find('.form-group > div >.tempo')[0].value = (Math.round(diff/60));
 				clicks=-1;
 				d1 = new Date();		
 			}
@@ -363,6 +363,7 @@ $(document).ready(function () {
 				alpha=0;
 				left=60;
 				right=100;
+				clicks=0;
 				//if(pontos!= undefined){
 				//	pontos.clearLayers();
 				//}
@@ -414,8 +415,8 @@ $(document).ready(function () {
 		}else{
 			d2 = new Date();
 			diff = Math.abs(d1-d2);
-			var ent= $(this).parent().find('.form-group > div > ').siblings()[1].value = clicks;
-			var ent= $(this).parent().find('.form-group > div > ').siblings()[2].value = (Math.round(diff/60));
+			var ent= $(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
+			var ent= $(this).parent().find('.form-group > div >.tempo')[0].value = (Math.round(diff/60));
 			$('#pills-tab > li> a.active').parent().next()[0].classList.remove("disabled");
 			$('#pills-tab > li> a.active').parent().next().find('a').click();
 			$('#pills-tab > li> a.active').parent().prev()[0].classList.add("disabled");

@@ -712,14 +712,14 @@ function geraperguntas(perguntas,index,vis){
   label.innerText= pergunta.question_text//[0];//"Pergunta 1 ?";
   var select = document.createElement("select");
   select.setAttribute('id',""+pergunta.id+vis);
-  select.setAttribute('name',""+pergunta.id+vis);
+  select.setAttribute('name',"pergunta"+pergunta.id+vis);
   select.setAttribute('class',"form-control");
   select.required=true;
   var opt= document.createElement("option");
   opt.value='';
   opt.disabled=true;
   opt.selected=true;
-  opt.innerHTML = 'Pick one';
+  opt.innerHTML = 'Escolha Um';
   select.appendChild(opt);
   var nQ=pergunta.id;
   if (nQ!='004C'&&nQ!='011C'&&nQ!='012C'&&nQ!='017T'&&nQ!='024T'&&nQ!='025T') {
@@ -728,12 +728,14 @@ function geraperguntas(perguntas,index,vis){
 
       var input1= document.createElement("input");
       input1.setAttribute('type','hidden');
+      input1.setAttribute('class','clicks');
       input1.setAttribute('id','CLC'+pergunta.id+vis);
       input1.setAttribute('name','CLC'+pergunta.id+vis);
       input1.setAttribute('value','');
 
       var input2= document.createElement("input");
       input2.setAttribute('type','hidden');
+      input2.setAttribute('class','tempo');
       input2.setAttribute('id','TMP'+pergunta.id+vis);
       input2.setAttribute('name','TMP'+pergunta.id+vis);
       input2.setAttribute('value','');
@@ -813,12 +815,14 @@ function geraperguntas(perguntas,index,vis){
       div1.setAttribute('class',"form-group col-md-4");
       var input1= document.createElement("input");
       input1.setAttribute('type','hidden');
+      input1.setAttribute('class','clicks');
       input1.setAttribute('id','CLC'+pergunta.id+vis);
       input1.setAttribute('name','CLC'+pergunta.id+vis);
       input1.setAttribute('value','');
 
       var input2= document.createElement("input");
       input2.setAttribute('type','hidden');
+      input2.setAttribute('class','tempo');
       input2.setAttribute('id','TMP'+pergunta.id+vis);
       input2.setAttribute('name','TMP'+pergunta.id+vis);
       input2.setAttribute('value','');
