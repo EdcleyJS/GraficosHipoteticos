@@ -793,6 +793,8 @@ function geraperguntas(perguntas,index,vis){
       input8.setAttribute('value','');
       if(pergunta.id=="004C"||pergunta.id=="011C"||pergunta.id=="012C"||pergunta.id=="017T"||pergunta.id=="024T"||pergunta.id=="025T"){
         input8.setAttribute('placeholder','Ex: Caruaru');
+      }else if(pergunta.id=="026T"){
+        input8.setAttribute('placeholder','Ex: 15000');
       }else{
         input8.setAttribute('placeholder','Ex: 50');
       }

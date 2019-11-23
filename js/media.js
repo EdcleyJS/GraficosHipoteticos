@@ -1,7 +1,7 @@
 var filterbymouth,filterbytri,alpha=0,left=60,right=100,database,interOn,mesSelecionado,anoSelecionado,diaSelecionado,trimestreSelecionado,opcoes=[],GeoLayer,LayerRange,layerTuto1,layerTuto2,layerTuto3,layerTuto4,LayerTaxi,dataset,max,featurename,selecionados=[],medias=[],hops=true;
-var mapMedia = L.map('vis4').setView([-8.305448,-37.822426], 8);
-var mapVis04 = L.map('vis04').setView([-8.305448,-37.822426], 8);
-var mapTaxi= L.map('vistaxi').setView([40.752866,-73.986023], 13);
+var mapMedia = L.map('vis4',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
+var mapVis04 = L.map('vis04',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
+var mapTaxi= L.map('vistaxi',{ zoomControl: false }).setView([40.752866,-73.986023], 13);
 var legendMedia = L.control({position: 'bottomright'});
 var grades=[0,20,40,60,80,100,120,140,160];
 var LayerMedia,GeoLayer2,GeoLayer3,mesmediaN;

@@ -20,7 +20,7 @@
     "highlights": [
       "Jaboatão dos Guararapes"
     ],
-    "answer": "42",
+    "answer": "56",
     "distance": {},
     "variance": {},
     "size": {}
@@ -68,7 +68,7 @@
       "Ipojuca",
       "Cabo de Santo Agostinho"
     ],
-    "answer": "66",
+    "answer": "67",
     "distance": "Short",
     "variance": {},
     "size": {}
@@ -82,7 +82,7 @@
       "Recife",
       "Santa Cruz"
     ],
-    "answer": "15",
+    "answer": "14",
     "distance": "Long",
     "variance": {},
     "size": {}
@@ -96,7 +96,7 @@
       "Jataúba",
       "Petrolândia"
     ],
-    "answer": "64",
+    "answer": "50",
     "distance": {},
     "variance": "Low",
     "size": {}
@@ -110,7 +110,7 @@
       "Tacaratu",
       "Araripina"
     ],
-    "answer": "48",
+    "answer": "47",
     "distance": {},
     "variance": "High",
     "size": {}
@@ -138,7 +138,7 @@
       "Sertânia",
       "Parnamirim"
     ],
-    "answer": "53",
+    "answer": "36",
     "distance": {},
     "variance": {},
     "size": "Large"
@@ -202,13 +202,13 @@
   },
   {
     "id": "015T",
-    "question_text": "De 0 a 100, qual a chance de o número de táxis na área West Chelsea/Hudson Yards(Rosa) ser superior a 35000?",
+    "question_text": "De 0 a 100, qual a chance de o número de táxis na área West Chelsea/Hudson Yards(Rosa) ser superior a 20000?",
     "op": [
     ],
     "highlights": [
       246
     ],
-    "answer": "83",
+    "answer": "8",
     "distance": {},
     "variance": {},
     "size": {}
@@ -283,7 +283,7 @@
       141,
       107
     ],
-    "answer": "84",
+    "answer": "83",
     "distance": {},
     "variance": "Low",
     "size": {}

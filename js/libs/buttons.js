@@ -320,10 +320,8 @@ $(document).ready(function () {
 				$(this).parent().parent()[0].classList.add('was-validated');
 			}else{
 			   	opcoes=[];
-			   	if($(this).parent().parent().hasClass('was-validated')){
-					$(this).parent().parent()[0].classList.remove("was-validated");
-				}
 			   	stepper4.next();
+			   	$(this).parent().parent().removeClass("was-validated");
 			   	var id= $(this).parent().next().find('div >div > div> ').siblings()[0].id;
 			   	var base=id.substring(3,4);
 				id=id.substring(0, 4);
