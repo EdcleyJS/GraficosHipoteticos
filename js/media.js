@@ -119,7 +119,7 @@ function inicioMedia(dados){
     }).addTo(mapMedia);
   if(mesmedia!=undefined){
     infoMedia.update = function (props) {
-      this._div.innerHTML= '<h5>Informações com base em PE.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mounthEn(mesmedia)+' no período.');
+      this._div.innerHTML= '<h5>Informações com base em PE.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mesmedia+' no período.');
     };
   }else{
     infoMedia.update = function (props) {
