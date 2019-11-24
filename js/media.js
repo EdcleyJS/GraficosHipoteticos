@@ -1,10 +1,11 @@
-var filterbymouth,filterbytri,alpha=0,left=60,right=100,database,interOn,mesSelecionado,anoSelecionado,diaSelecionado,trimestreSelecionado,opcoes=[],GeoLayer,LayerRange,layerTuto1,layerTuto2,layerTuto3,layerTuto4,LayerTaxi,dataset,max,featurename,selecionados=[],medias=[],hops=true;
+var filterbymouth,filterbytri,alpha=0,left=60,right=100,database,interOn,mesSelecionado,anoSelecionado,diaSelecionado,trimestreSelecionado,opcoes=[],GeoLayer,LayerRange,layerTuto1,layerTuto2,layerTuto3,layerTuto4,LayerTaxi,dataset,max,featurename,selecionados=[],medias=[],hops=true,mediaLayer;
+var sorteados;
 var mapMedia = L.map('vis4',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
 var mapVis04 = L.map('vis04',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
 var mapTaxi= L.map('vistaxi',{ zoomControl: false }).setView([40.752866,-73.986023], 13);
 var legendMedia = L.control({position: 'bottomright'});
 var grades=[0,20,40,60,80,100,120,140,160];
-var LayerMedia,GeoLayer2,GeoLayer3,mesmediaN;
+var LayerMedia,GeoLayer2,GeoLayer3,mesmedia,mesmediaN;
 mapMedia.doubleClickZoom.disable();
 mapMedia.scrollWheelZoom.disable();
 mapVis04.doubleClickZoom.disable();
@@ -118,7 +119,7 @@ function inicioMedia(dados){
     }).addTo(mapMedia);
   if(mesmedia!=undefined){
     infoMedia.update = function (props) {
-      this._div.innerHTML= '<h5>Informações com base em PE.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mesmedia+' no período.');
+      this._div.innerHTML= '<h5>Informações com base em PE.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mounthEn(mesmedia)+' no período.');
     };
   }else{
     infoMedia.update = function (props) {

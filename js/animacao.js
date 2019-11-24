@@ -11,7 +11,7 @@ $(document).ready(function () {
 	//var laço= trimestre.length;
 	//var laço= dias.length;
 	//console.log(laço);
-	var sorteados=shuffle(meses); //[];
+	sorteados=shuffle(meses); //[];
 	/*for (var i = 0; i <3; i++) {
 		n=true;
 		while(n==true){
@@ -53,23 +53,23 @@ $(document).ready(function () {
 					mesmediaN=1;
 				}else if(sorteados[i]=='Mar'){
 					mesmediaN=2;
-				}else if(sorteados[i]=='Apr'){
+				}else if(sorteados[i]=='Abr'){
 					mesmediaN=3;
-				}else if(sorteados[i]=='May'){
+				}else if(sorteados[i]=='Mai'){
 					mesmediaN=4;
 				}else if(sorteados[i]=='Jun'){
 					mesmediaN=5;
 				}else if(sorteados[i]=='Jul'){
 					mesmediaN=6;
-				}else if(sorteados[i]=='Aug'){
+				}else if(sorteados[i]=='Ago'){
 					mesmediaN=7;
-				}else if(sorteados[i]=='Sep'){
+				}else if(sorteados[i]=='Set'){
 					mesmediaN=8;
-				}else if(sorteados[i]=='Oct'){
+				}else if(sorteados[i]=='Out'){
 					mesmediaN=9;
 				}else if(sorteados[i]=='Nov'){
 					mesmediaN=10;
-				}else if(sorteados[i]=='Dec'){
+				}else if(sorteados[i]=='Dez'){
 					mesmediaN=11;
 				}
 				inicioTaxi(datasettaxi);
