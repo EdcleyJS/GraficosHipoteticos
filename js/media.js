@@ -4,7 +4,8 @@ var mapMedia = L.map('vis4',{ zoomControl: false }).setView([-8.305448,-37.82242
 var mapVis04 = L.map('vis04',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
 var mapTaxi= L.map('vistaxi',{ zoomControl: false }).setView([40.752866,-73.986023], 13);
 var legendMedia = L.control({position: 'bottomright'});
-var grades=[0,20,40,60,80,100,120,140,160];
+//var grades=[0,20,40,60,80,100,120,140,160];
+var grades=[0,30,60,90,120,150,180,210,240];
 var LayerMedia,GeoLayer2,GeoLayer3,mesmedia,mesmediaN;
 mapMedia.doubleClickZoom.disable();
 mapMedia.scrollWheelZoom.disable();
