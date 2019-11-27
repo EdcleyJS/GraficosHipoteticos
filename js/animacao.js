@@ -36,7 +36,7 @@ $(document).ready(function () {
 			if(i==(sorteados.length-1)){
 				i=-1;
 			}
-			await sleep(460);
+			await sleep(660);
 		}
 	}
 	async function animacaoT(){
