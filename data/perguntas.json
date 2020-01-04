@@ -1,7 +1,7 @@
 [
   {
     "id": "001C",
-    "question_text": "Qual a chance de chover em Recife(Rosa) abaixo de 100mm?",
+    "question_text": "De 0 a 100, qual a probabilidade de chover em Recife(Rosa) abaixo de 100mm?",
     "op": [
     ],
     "highlights": [
@@ -14,7 +14,7 @@
   },
   {
     "id": "002C",
-    "question_text": "Qual a chance de chover em Jaboatão dos Guararapes(Rosa) acima de 100mm?",
+    "question_text": "De 0 a 100, qual a probabilidade de chover em Jaboatão dos Guararapes(Rosa) acima de 100mm?",
     "op": [
     ],
     "highlights": [
@@ -27,7 +27,7 @@
   },
   {
     "id": "003C",
-    "question_text": "Qual a chance de chover em São Lourenço da Mata(Rosa)  entre 50 e 150mm?",
+    "question_text": "De 0 a 100, qual a probabilidade de chover em São Lourenço da Mata(Rosa) entre 50 e 150mm?",
     "op": [
       "1",
       "2",
@@ -45,7 +45,7 @@
   },
   {
     "id": "004C",
-    "question_text": "Entre Ipojuca(Rosa) e Cabo de Santo Agostinho(Azul), qual das duas cidades é mais provável de chover menos que 100mm?",
+    "question_text": "Entre Ipojuca(Rosa) e Cabo de Santo Agostinho(Azul), qual das duas cidades é mais provável de chover abaixo de 100mm?",
     "op": [
       "Ipojuca",
       "Cabo de Santo Agostinho"
@@ -61,7 +61,7 @@
   },
   {
     "id": "005C",
-    "question_text": "Qual é a chance de chover menos em Ipojuca(Rosa) do que no Cabo de Santo Agostinho(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Ipojuca(Rosa) do que no Cabo de Santo Agostinho(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -75,7 +75,7 @@
   },
   {
     "id": "006C",
-    "question_text": "Qual é a chance de chover menos em Recife(Rosa) do que em Santa Cruz(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Recife(Rosa) do que em Santa Cruz(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -89,7 +89,7 @@
   },
   {
     "id": "007C",
-    "question_text": "Qual é a chance de chover menos em Jataúba(Rosa) do que em Petrolândia(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Jataúba(Rosa) do que em Petrolândia(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -103,7 +103,7 @@
   },
   {
     "id": "008C",
-    "question_text": "Qual é a chance de chover menos em Tacaratú(Rosa) do que em Araripina(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Tacaratú(Rosa) do que em Araripina(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -117,7 +117,7 @@
   },
   {
     "id": "009C",
-    "question_text": "Qual é a chance de chover menos em Saloá(Rosa) do que em Pombos(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Saloá(Rosa) do que em Pombos(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -131,7 +131,7 @@
   },
   {
     "id": "010C",
-    "question_text": "Qual é a chance de chover menos em Sertânia(Rosa) do que em Parnamirim(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Sertânia(Rosa) do que em Parnamirim(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -145,7 +145,7 @@
   },
   {
     "id": "011C",
-    "question_text": "Selecione o nome da cidade que tem a maior probabilidade de chover abaixo de 100mm?",
+    "question_text": "Selecione na lista abaixo o nome da cidade que tem a maior probabilidade de chover abaixo de 100mm?",
     "op": [
       "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
       "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
@@ -160,7 +160,7 @@
   },
   {
     "id": "012C",
-    "question_text": "Selecione o nome da cidade que tem a menor probabilidade de chover abaixo de 100mm?",
+    "question_text": "Selecione na lista abaixo o nome da cidade que tem a menor probabilidade de chover abaixo de 100mm?",
     "op": [
       "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
       "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
@@ -189,7 +189,7 @@
   },
     {
     "id": "014T",
-    "question_text": "Qual a chance de o número de táxis na área West Chelsea/Hudson Yards(Rosa) ser menor que 18000?",
+    "question_text": "De 0 a 100, qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar abaixo de 18000?",
     "op": [
     ],
     "highlights": [
@@ -202,7 +202,7 @@
   },
   {
     "id": "015T",
-    "question_text": "Qual a chance de o número de táxis na área West Chelsea/Hudson Yards(Rosa) ser superior a 20000?",
+    "question_text": "De 0 a 100, qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar acima de 20000?",
     "op": [
     ],
     "highlights": [
@@ -215,7 +215,7 @@
   },
   {
     "id": "016T",
-    "question_text": "Qual a chance de o número de táxis na área Times Sq/Theatre District(Rosa) estar entre 18000 e 35000?",
+    "question_text": "De 0 a 100, qual a probabilidade de o número de corridas de táxis na área Times Sq/Theatre District(Rosa) estar entre 18000 e 35000?",
     "op": [
     ],
     "highlights": [
@@ -228,7 +228,7 @@
   },
     {
     "id": "017T",
-    "question_text": "Entre Midtown South(Rosa) e Murray Hill(Azul), qual das duas áreas é mais provável que o número de corridas de táxi seja menor que 27000?",
+    "question_text": "Entre Midtown South(Rosa) e Murray Hill(Azul), qual das duas áreas é mais provável que o número de corridas de táxis esteja abaixo de 27000?",
     "op": [
       "Midtown South",
       "Murray Hill"
@@ -244,7 +244,7 @@
   },
   {
     "id": "018T",
-    "question_text": "Qual é a chance do número de corridas de táxi em Clinton East(Rosa) ser menor que Times Sq/Theatre District(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em Clinton East(Rosa) ser menor que Times Sq/Theatre District(Azul)?",
     "op": [
       "Clinton East",
       "Times Sq/Theatre District"
@@ -260,7 +260,7 @@
   },
   {
     "id": "019T",
-    "question_text": "Qual é a chance do número de corridas de táxi em West Village(Rosa) ser menor que Midtown North(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Midtown North(Azul)?",
     "op": [
       "West Village",
       "Midtown North"
@@ -276,7 +276,7 @@
   },
   {
     "id": "020T",
-    "question_text": "Qual é a chance do número de corridas de táxi em Lenox Hill West(Rosa) ser menor que Gramercy(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em Lenox Hill West(Rosa) ser menor que Gramercy(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -290,7 +290,7 @@
   },
   {
     "id": "021T",
-    "question_text": "Qual é a chance do número de corridas de táxi em West Village(Rosa) ser menor que Murray Hill(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Murray Hill(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -304,7 +304,7 @@
   },
   {
     "id": "022T",
-    "question_text": "Qual é a chance do número de corridas de táxi no Central Park(Rosa) ser menor que em Greenwich Village North(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis no Central Park(Rosa) ser menor que em Greenwich Village North(Azul)?",
     "op": [
       "Central Park",
       "Greenwich Village North"
@@ -320,7 +320,7 @@
   },
   {
     "id": "023T",
-    "question_text": "Qual é a chance do número de corridas de táxi em Union Sq(Rosa) ser menor que em Midtown Center(Azul)?",
+    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em Union Sq(Rosa) ser menor que em Midtown Center(Azul)?",
     "op": [
       "Union Sq",
       "Midtown Center"
@@ -336,7 +336,7 @@
   },
   {
     "id": "024T",
-    "question_text": "Selecione o nome da área com maior probabilidade de ter um número de corrida de táxi maior que 34000?",
+    "question_text": "Selecione na lista abaixo o nome da área com maior probabilidade de ter um número de corridas de táxis acima de 34000?",
     "op": [
       "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
@@ -350,7 +350,7 @@
   },
   {
     "id": "025T",
-    "question_text": "Selecione o nome da área com menor probabilidade de ter um número de corrida de táxi maior que 3500?",
+    "question_text": "Selecione na lista abaixo o nome da área com menor probabilidade de ter um número de corridas de táxis acima de 3500?",
     "op": [
       "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
@@ -364,7 +364,7 @@
   },
   {
     "id": "026T",
-    "question_text": "Estime qual é o número médio de corridas de táxi na área Gramercy(Rosa)?",
+    "question_text": "Estime qual é o número médio de corridas de táxis na área Gramercy(Rosa)?",
     "op": [
       ""
     ],
