@@ -1,6 +1,14 @@
 var arr = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],clicks=0,d1 = new Date(),stepper1,stepper2,stepper3,stepper4,d4,list,d2,diff,post_url,request_method,form_data,forms;
 var novodataset,database,dataset,databasetaxi,datasettaxi;
 var tempoinicial=new Date(),tempofinal,tempotutorial,duracaoPerguntas,duracaotutorial,duracao;
+var recursiva = function () {
+    var tempoalert= new Date();
+    if(tempoalert-tempoinicial>600000){
+      alert("Se passaram 10 minutos cuidado com o tempo.");
+    }
+    setTimeout(recursiva,600000);
+}
+recursiva();
 d3.json("./data/perguntas.json",function(error,data){
 	novodataset=data;
 });
