@@ -27,7 +27,7 @@
   },
   {
     "id": "003C",
-    "question_text": "De 0 a 100, qual a probabilidade de chover em São Lourenço da Mata(Rosa) entre 50 e 150mm?",
+    "question_text": "De 0 a 100, qual a probabilidade de chover em São Lourenço da Mata(Rosa) entre 50mm e 150mm?",
     "op": [
       "1",
       "2",
