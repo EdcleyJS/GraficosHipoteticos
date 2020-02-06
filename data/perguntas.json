@@ -1,7 +1,7 @@
 [
   {
     "id": "001C",
-    "question_text": "De 0 a 100, qual a probabilidade de chover em Recife(Rosa) abaixo de 100mm?",
+    "question_text": "Qual a probabilidade de chover em Recife(Rosa) abaixo de 100mm?",
     "op": [
     ],
     "highlights": [
@@ -14,7 +14,7 @@
   },
   {
     "id": "002C",
-    "question_text": "De 0 a 100, qual a probabilidade de chover em Jaboatão dos Guararapes(Rosa) acima de 100mm?",
+    "question_text": "Qual a probabilidade de chover em Jaboatão dos Guararapes(Rosa) acima de 100mm?",
     "op": [
     ],
     "highlights": [
@@ -27,7 +27,7 @@
   },
   {
     "id": "003C",
-    "question_text": "De 0 a 100, qual a probabilidade de chover em São Lourenço da Mata(Rosa) entre 50mm e 150mm?",
+    "question_text": "Qual a probabilidade de chover em São Lourenço da Mata(Rosa) entre 50mm e 150mm?",
     "op": [
       "1",
       "2",
@@ -61,7 +61,7 @@
   },
   {
     "id": "005C",
-    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Ipojuca(Rosa) do que no Cabo de Santo Agostinho(Azul)?",
+    "question_text": "Qual é a probabilidade de chover menos em Ipojuca(Rosa) do que no Cabo de Santo Agostinho(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -75,7 +75,7 @@
   },
   {
     "id": "006C",
-    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Recife(Rosa) do que em Santa Cruz(Azul)?",
+    "question_text": "Qual é a probabilidade de chover menos em Recife(Rosa) do que em Santa Cruz(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -89,7 +89,7 @@
   },
   {
     "id": "007C",
-    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Jataúba(Rosa) do que em Petrolândia(Azul)?",
+    "question_text": "Qual é a probabilidade de chover menos em Jataúba(Rosa) do que em Petrolândia(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -103,7 +103,7 @@
   },
   {
     "id": "008C",
-    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Tacaratú(Rosa) do que em Araripina(Azul)?",
+    "question_text": "Qual é a probabilidade de chover menos em Tacaratú(Rosa) do que em Araripina(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -117,7 +117,7 @@
   },
   {
     "id": "009C",
-    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Saloá(Rosa) do que em Pombos(Azul)?",
+    "question_text": "Qual é a probabilidade de chover menos em Saloá(Rosa) do que em Pombos(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -131,7 +131,7 @@
   },
   {
     "id": "010C",
-    "question_text": "De 0 a 100, qual é a probabilidade de chover menos em Sertânia(Rosa) do que em Parnamirim(Azul)?",
+    "question_text": "Qual é a probabilidade de chover menos em Sertânia(Rosa) do que em Parnamirim(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -189,7 +189,7 @@
   },
     {
     "id": "014T",
-    "question_text": "De 0 a 100, qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar abaixo de 18000?",
+    "question_text": "Qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar abaixo de 18000?",
     "op": [
     ],
     "highlights": [
@@ -202,7 +202,7 @@
   },
   {
     "id": "015T",
-    "question_text": "De 0 a 100, qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar acima de 20000?",
+    "question_text": "Qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar acima de 20000?",
     "op": [
     ],
     "highlights": [
@@ -215,7 +215,7 @@
   },
   {
     "id": "016T",
-    "question_text": "De 0 a 100, qual a probabilidade de o número de corridas de táxis na área Times Sq/Theatre District(Rosa) estar entre 18000 e 35000?",
+    "question_text": "Qual a probabilidade de o número de corridas de táxis na área Times Sq/Theatre District(Rosa) estar entre 18000 e 35000?",
     "op": [
     ],
     "highlights": [
@@ -244,7 +244,7 @@
   },
   {
     "id": "018T",
-    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em Clinton East(Rosa) ser menor que Times Sq/Theatre District(Azul)?",
+    "question_text": "Qual é a probabilidade do número de corridas de táxis em Clinton East(Rosa) ser menor que Times Sq/Theatre District(Azul)?",
     "op": [
       "Clinton East",
       "Times Sq/Theatre District"
@@ -260,7 +260,7 @@
   },
   {
     "id": "019T",
-    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Midtown North(Azul)?",
+    "question_text": "Qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Midtown North(Azul)?",
     "op": [
       "West Village",
       "Midtown North"
@@ -276,7 +276,7 @@
   },
   {
     "id": "020T",
-    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em Lenox Hill West(Rosa) ser menor que Gramercy(Azul)?",
+    "question_text": "Qual é a probabilidade do número de corridas de táxis em Lenox Hill West(Rosa) ser menor que Gramercy(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -290,7 +290,7 @@
   },
   {
     "id": "021T",
-    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Murray Hill(Azul)?",
+    "question_text": "Qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Murray Hill(Azul)?",
     "op": [
     ],
     "highlights": [
@@ -304,7 +304,7 @@
   },
   {
     "id": "022T",
-    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis no Central Park(Rosa) ser menor que em Greenwich Village North(Azul)?",
+    "question_text": "Qual é a probabilidade do número de corridas de táxis no Central Park(Rosa) ser menor que em Greenwich Village North(Azul)?",
     "op": [
       "Central Park",
       "Greenwich Village North"
@@ -320,7 +320,7 @@
   },
   {
     "id": "023T",
-    "question_text": "De 0 a 100, qual é a probabilidade do número de corridas de táxis em Union Sq(Rosa) ser menor que em Midtown Center(Azul)?",
+    "question_text": "Qual é a probabilidade do número de corridas de táxis em Union Sq(Rosa) ser menor que em Midtown Center(Azul)?",
     "op": [
       "Union Sq",
       "Midtown Center"
