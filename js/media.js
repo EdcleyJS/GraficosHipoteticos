@@ -1,343 +1,209 @@
-var filterbymouth,filterbytri,alpha=0,left=60,right=100,database,interOn,mesSelecionado,anoSelecionado,diaSelecionado,trimestreSelecionado,opcoes=[],GeoLayer,LayerRange,layerTuto1,layerTuto2,layerTuto3,layerTuto4,LayerTaxi,dataset,max,featurename,selecionados=[],medias=[],hops=true,mediaLayer;
-var sorteados;
-var mapMedia = L.map('vis4',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
-var mapVis04 = L.map('vis04',{ zoomControl: false }).setView([-8.305448,-37.822426], 8);
-var mapTaxi= L.map('vistaxi',{ zoomControl: false }).setView([40.752866,-73.986023], 13);
-var legendMedia = L.control({position: 'bottomright'});
-//var grades=[0,20,40,60,80,100,120,140,160];
-var grades=[0,30,60,90,120,150,180,210,240];
-var LayerMedia,GeoLayer2,GeoLayer3,mesmedia,mesmediaN;
-mapMedia.doubleClickZoom.disable();
-mapMedia.scrollWheelZoom.disable();
-mapVis04.doubleClickZoom.disable();
-mapVis04.scrollWheelZoom.disable();
-mapTaxi.scrollWheelZoom.disable();
-mapTaxi.doubleClickZoom.disable();
-var infoMedia = L.control();
+var left=200,right=500,database,interOn,opcoes=[],LayerRange,layerTuto4,dataset,max,featurename,selecionados=[],medias=[],hops=true;
+var mapVis02 = L.map('vis02',{zoomControl: false,preferCanvas: true,attributionControl: false,crs: L.CRS.Simple}).setView([0.203125,0.6640625], 6);
+var mapVisPerguntas = L.map('visPerguntas',{zoomControl: false,preferCanvas: true,attributionControl: false,crs: L.CRS.Simple}).setView([0.203125,0.6640625], 6);
+mapVis02.doubleClickZoom.disable();
+mapVis02.scrollWheelZoom.disable();
+mapVisPerguntas.doubleClickZoom.disable();
+mapVisPerguntas.scrollWheelZoom.disable();
+var grades;
+var bounds = [[0,0], [1000,1000]];
+var geodata;
 
-//-- MAPA DE MÉDIA COM ANIMAÇÃO DA ETAPA DE PERGUNTAS AO USUÁRIO. --
-//L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-//  attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
-//  maxZoom: 18,
-//  id: 'mapbox.streets',
-//  accessToken: 'pk.eyJ1IjoiZWRjbGV5OTQ1MiIsImEiOiJjamdvMGdmZ2owaTdiMndwYTJyM2tteTl2In0.2q25nBNRxzFxeaYahFGQ6g'
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 18
-  }).addTo(mapMedia);
+var firstTime = true;
 
-//-- DIV INFO DO MAPA CONTROLADO --
-infoMedia.onAdd = function (mymap) {
-  this._div = L.DomUtil.create('div', 'info');
-  this.update();
-  return this._div;
-};
+var url_string = window.location.href
+var url = new URL(url_string);
+var polyfile,polygon;
+var distributionfile;
+var distribution,distribution_data;
 
-//-- DIV LEGENDA DO MAPA CONTROLADO --
-legendMedia.onAdd = function (mapMedia) {
-  var div = L.DomUtil.create('div', 'info legend');
-  for (var i = (grades.length-1); i >=0 ; i--) {
-    div.innerHTML +='<i style="color:'+colorM(grades[i])+'; background:'+colorM(grades[i])+'"></i>'+grades[i]+'</br>';
-  }
-  return div;
-};
-legendMedia.addTo(mapMedia);
-
-//-- FUNÇÃO QUE DESENHA E CONTROLA OS PONTOS NO MAPA --
-function inicioMedia(dados){
-  var maximo=0;
-  if(LayerMedia!= null){
-    LayerMedia.clearLayers();
-  }
-  LayerMedia= L.geoJson(dados,{
-    style: function(feature){
-      if(mesmedia!=undefined){
-            var distdataMes=[];
-            database.forEach(function(d,i){
-              if (d.name==feature.properties.name && d.Mês==mesmedia){
-                  distdataMes.push(SomaDias(d));
-              }
-            });
-            var probArea= new distribuicaoTeste(distdataMes,0);
-      }else{
-        var probArea= new distribuicaoTeste(getDis(feature.properties.name),0);
-      }
-      var media= probArea.media().toFixed(2);
-      if(opcoes.includes(feature.properties.name)){
-        if(opcoes[0]==feature.properties.name){
-          return {
-            weight: 3.5,
-            opacity: 1,
-            fillColor: colorM(media),
-            dashArray: '3',
-            fillOpacity: 0.9,
-            color: '#c51b7d'
-          };
-        }else{
-          return {
-            weight: 3.5,
-            opacity: 1,
-            fillColor: colorM(media),
-            dashArray: '3',
-            fillOpacity: 0.9,
-            color: '#053061'
-          };            
-        }
-      }else{      
-        return {
-            weight: 0.5,
-            opacity: 1,
-            fillColor: colorM(media),
-            color: 'black',
-            fillOpacity: 0.9
-        };
-      }
-    },
-      onEachFeature: function (feature, layer) {
-          if(mesmedia!=undefined){
-            var distdataMes=[];
-            database.forEach(function(d,i){
-              if (d.name==feature.properties.name && d.Mês==mesmedia){
-                  distdataMes.push(SomaDias(d));
-              }
-            });
-            var probArea= new distribuicaoTeste(distdataMes,0);
-          }else{
-            var probArea= new distribuicaoTeste(getDis(feature.properties.name),0);
-          }
-          var media= probArea.media().toFixed(2);
-          layer.bindPopup(""+feature.properties.name+": "+media);
-          layer.on('mouseover', function (e) {
-              highlightFeature(e);
-              this.openPopup();
-          });
-          layer.on('mouseout', function (e) {
-              LayerMedia.resetStyle(e.target);
-              this.closePopup();
-          });
-        }
-    }).addTo(mapMedia);
-  if(mesmedia!=undefined){
-    infoMedia.update = function (props) {
-      this._div.innerHTML= '<h5>Informações com base em PE.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mesmedia+' no período.');
-    };
+function Start_Update_data(){
+  if(!polyfile) {
+    polyfile = "./data/polygons.geojson";
   }else{
-    infoMedia.update = function (props) {
-      this._div.innerHTML= infoprops(props);
-    };
+    polyfile = polygon;
   }
-  infoMedia.addTo(mapMedia);
-}
-
-//-- MAPA DE MÉDIA COM ANIMAÇÃO DA ETAPA DE PERGUNTAS AO USUÁRIO. --
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 18
-}).addTo(mapVis04);
-
-//-- DIV INFO DO MAPA CONTROLADO --
-var infoVis04=L.control();
-infoVis04.onAdd = function (mymap) {
-  this._div = L.DomUtil.create('div', 'info');
-  this.update();
-  return this._div;
-};
-
-//-- DIV LEGENDA DO MAPA CONTROLADO --
-var legendVis04 = L.control({position: 'bottomright'});
-legendVis04.onAdd = function (mapMedia) {
-  var div = L.DomUtil.create('div', 'info legend');
-  for (var i = (grades.length-1); i >=0 ; i--) {
-    div.innerHTML +='<i style="color:'+colorM(grades[i])+'; background:'+colorM(grades[i])+'"></i>'+grades[i]+'</br>';
+  d3.json(polyfile,function(error,polygons_far){
+    geodata=polygons_far;
+  });
+  if(!distributionfile) {
+    distributionfile = "./data/distribuicao.json";
+  }else{
+    distributionfile = distribution;
   }
-  return div;
-};
-legendVis04.addTo(mapVis04);
-
-//-- FUNÇÃO QUE DESENHA E CONTROLA OS PONTOS NO MAPA --
-function Vis04TutorialFunction(dados){
-  var maximo=0;
-  if(layerTuto4!= null){
-    layerTuto4.clearLayers();
-  }
-  layerTuto4= L.geoJson(dados,
-    {style: function(feature){
-      if(mesmedia!=undefined){
-            var distdataMes=[];
-            database.forEach(function(d,i){
-              if (d.name==feature.properties.name && d.Mês==mesmedia){
-                  distdataMes.push(SomaDias(d));
-              }
-            });
-            var probArea= new distribuicaoTeste(distdataMes,0);
-      }else{
-        var probArea= new distribuicaoTeste(getDis(feature.properties.name),0);
+  d3.json(distributionfile,function(error,dist){
+    menor = Infinity
+    maior = -Infinity
+    for(let key in dist){
+      let values = dist[key];
+      for(key2 in values){
+          let value = values[key2];
+          if(value < menor) menor = value;
+          if(value > maior) maior = value;
       }
-      var media= probArea.media().toFixed(2);
-      if(opcoes.includes(feature.properties.name)){
-        if(opcoes[0]==feature.properties.name){
-          return {
-            weight: 3.5,
-            opacity: 1,
-            fillColor: colorM(media),
-            dashArray: '3',
-            fillOpacity: 0.9,
-            color: '#c51b7d'
-          };
-        }else{
-          return {
-            weight: 3.5,
-            opacity: 1,
-            fillColor: colorM(media),
-            dashArray: '3',
-            fillOpacity: 0.9,
-            color: '#053061'
-          };            
-        }
-      }else{      
-        return {
-            weight: 0.5,
-            opacity: 1,
-            fillColor: colorM(media),
-            color: 'black',
-            fillOpacity: 0.9
-        };
-      }
-
-      },onEachFeature: function (feature, layer) {
-          if(mesmedia!=undefined){
-            var distdataMes=[];
-            database.forEach(function(d,i){
-              if (d.name==feature.properties.name && d.Mês==mesmedia){
-                  distdataMes.push(SomaDias(d));
-              }
-            });
-            var probArea= new distribuicaoTeste(distdataMes,0);
-          }else{
-            var probArea= new distribuicaoTeste(getDis(feature.properties.name),0);
-          }
-          var media= probArea.media().toFixed(2);
-          layer.bindPopup(""+feature.properties.name+": "+media);
-          layer.on('mouseover', function (e) {
-              highlightFeature(e);
-              this.openPopup();
-          });
-          layer.on('mouseout', function (e) {
-              layerTuto4.resetStyle(e.target);
-              this.closePopup();
-          });
-        }
-    }).addTo(mapVis04);
-  if(mesmedia!=undefined){
-    infoVis04.update = function (props) {
-      this._div.innerHTML= '<h5>Informações com base em PE.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mesmedia+' no período.');
     }
-  }else{
-    infoVis04.update = function (props) {
-      this._div.innerHTML= infoprops(props);
-    };
-  }
-  infoVis04.addTo(mapVis04);
+    //
+    colorScale = d3.scale.quantile().domain([menor,maior]).range(['#f7fcfd','#e5f5f9','#ccece6','#99d8c9','#66c2a4','#41ae76','#238b45','#006d2c','#00441b']); 
+    grades = d3.scale.linear().domain([menor,maior]).ticks(12);
+
+    addLegend();
+    distribution_data=Object.keys(dist).map(function(key) {
+      return [dist[key]];
+    });
+  });
 }
-
-//-- MAPA DE MÉDIA COM ANIMAÇÃO DA ETAPA DE PERGUNTAS AO USUÁRIO. --
-L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 18
-  }).addTo(mapTaxi);
-var infoTaxi= L.control();
-//-- DIV INFO DO MAPA CONTROLADO --
-infoTaxi.onAdd = function (mymap) {
-  this._div = L.DomUtil.create('div', 'info');
-  this.update();
-  return this._div;
-};
-var gradesTaxi=[43,6000,12000,18000,24000,30000,36000,42000,54469];
-//-- DIV LEGENDA DO MAPA CONTROLADO --
-var legendTaxi = L.control({position: 'bottomright'});
-legendTaxi.onAdd = function (mapMedia) {
-  var div = L.DomUtil.create('div', 'info legend');
-  for (var i = (gradesTaxi.length-1); i >=0 ; i--) {
-    div.innerHTML +='<i style="color:'+colorMT(gradesTaxi[i])+'; background:'+colorMT(gradesTaxi[i])+'"></i>'+gradesTaxi[i]+'</br>';
-  }
-  return div;
-};
-legendTaxi.addTo(mapTaxi);
-
-//-- FUNÇÃO QUE DESENHA E CONTROLA OS PONTOS NO MAPA --
-function inicioTaxi(dados){
-  var maximo=0;
-  if(LayerTaxi!= null){
-    LayerTaxi.clearLayers();
-  }
-  LayerTaxi= L.geoJson(dados,{
-    style: function(feature){
-      if(mesmedia!=undefined){
-        var media= distribuicaoNYC(feature.properties.OBJECTID)[mesmediaN];
+var infoVis02=L.control();
+var legendVis02 = L.control({position: 'bottomright'});
+var infoVisPerguntas=L.control();
+var legendVisPerguntas = L.control({position: 'bottomright'});
+function addLegend(){
+  infoVis02.onAdd = function (mymap) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+  legendVis02.onAdd = function (mapprob_gerada) {
+    var div = L.DomUtil.create('div', 'info legend');
+    for (var i = (grades.length-1); i >=0 ; i--) {
+        div.innerHTML +='<i style="color:'+color(grades[i])+'; background:'+color(grades[i])+'"></i>'+grades[i]+'</br>';
+    }
+    return div;
+  };
+  legendVis02.addTo(mapVis02);
+  infoVisPerguntas.onAdd = function (mymap) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+  legendVisPerguntas.onAdd = function (mapprob_gerada) {
+    var div = L.DomUtil.create('div', 'info legend');
+    for (var i = (grades.length-1); i >=0 ; i--) {
+        div.innerHTML +='<i style="color:'+color(grades[i])+'; background:'+color(grades[i])+'"></i>'+grades[i]+'</br>';
+    }
+    return div;
+  };
+  legendVisPerguntas.addTo(mapVisPerguntas);
+}
+//-- FUNÇÃO QUE DESENHA E CONTROLA AS AREAS NO MAPA --
+var layerTuto2,layerPerguntas;
+function Vis02TutorialFunction(){
+  if(layerTuto2!= undefined){
+      layerTuto2.clearLayers();
+    }
+    layerTuto2=L.geoJson(geodata,
+      {style: function(feature){
+          //Style para definir configurações dos polígonos a serem desenhados e colorir com base na escala criada.
+      if(amostraN!=undefined){
+        var prob_gerada= distribuicaoSin(feature.properties.id,distribution_data)[amostraN];
       }else{
-        var probArea= new distribuicaoTeste(distribuicaoNYC(feature.properties.OBJECTID),0);
-        var media= probArea.media().toFixed(2);
+        var probArea= new distribuicaoTeste(distribuicaoSin(feature.properties.id,distribution_data),0);
+        var prob_gerada= probArea.media().toFixed(2);
       }
-      
-      if(opcoes.includes(feature.properties.OBJECTID)){
-        if(opcoes[0]==feature.properties.OBJECTID){
-          return {
-            weight: 3.5,
-            opacity: 1,
-            fillColor: colorMT(media),
-            dashArray: '3',
-            fillOpacity: 0.9,
-            color: '#c51b7d'
-          };
-        }else{
-          return {
-            weight: 3.5,
-            opacity: 1,
-            fillColor: colorMT(media),
-            dashArray: '3',
-            fillOpacity: 0.9,
-            color: '#053061'
-          };            
-        }
-      }else{      
-        return {
-            weight: 0.5,
-            opacity: 1,
-            fillColor: colorMT(media),
-            color: 'black',
-            fillOpacity: 0.9
-        };
-      }
-    },
-      onEachFeature: function (feature, layer) {
-          if(mesmedia!=undefined){
-            var media= distribuicaoNYC(feature.properties.OBJECTID)[mesmediaN];
+      if(feature.properties.highlight==1){
+          if(feature.properties.id==0){
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: color(prob_gerada),
+              fillOpacity: 0.9,
+              color: '#e66101'
+            };
           }else{
-            var probArea= new distribuicaoTeste(distribuicaoNYC(feature.properties.OBJECTID),0);
-            var media= probArea.media().toFixed(2);
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: color(prob_gerada),
+              fillOpacity: 0.9,
+              color: '#d01c8b'
+            };
           }
-          layer.bindPopup(""+feature.properties.zone+": "+media);
+        }else{
+              return {
+                weight: 0.5,
+                opacity: 1,
+                fillColor: color(prob_gerada),
+                color: 'black',
+                fillOpacity: 0.9
+              };
+          }
+    },
+    onEachFeature: function (feature, layer) {
           layer.on('mouseover', function (e) {
               highlightFeature(e);
-              this.openPopup();
           });
           layer.on('mouseout', function (e) {
-              LayerTaxi.resetStyle(e.target);
-              this.closePopup();
+              layerTuto2.resetStyle(e.target);
           });
-        }
-    }).addTo(mapTaxi);
-  if(mesmedia!=undefined){
-    infoTaxi.update = function (props) {
-      this._div.innerHTML= '<h5>Informações baseadas na ilha de Manhattan - Nova York / EUA.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Valores para o mês de '+mesmedia+' no período.');
+      }
+  }).addTo(mapVis02);
+  if(amostraN!=undefined){
+    infoVis02.update = function (props) {
+      this._div.innerHTML= '<h5>Informações gerais.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Amostra Nº'+amostraN+'.');
     };
   }else{
-    infoTaxi.update = function (props) {
+    infoVis02.update = function (props) {
       this._div.innerHTML= infoprops(props);
     };
   }
-  infoTaxi.addTo(mapTaxi);
+  infoVis02.addTo(mapVis02);
+}
+function VisPerguntas(){
+    if(layerPerguntas!= undefined){
+      layerPerguntas.clearLayers();
+    }
+    layerPerguntas=L.geoJson(geodata,
+      {style: function(feature){
+      if(amostraN!=undefined){
+        var prob_gerada= distribuicaoSin(feature.properties.id,distribution_data)[amostraN];
+      }else{
+        var probArea= new distribuicaoTeste(distribuicaoSin(feature.properties.id,distribution_data),0);
+        var prob_gerada= probArea.media().toFixed(2);
+      }
+      if(feature.properties.highlight==1){
+          if(feature.properties.id==0){
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: color(prob_gerada),
+              fillOpacity: 0.9,
+              color: '#e66101'
+            };
+          }else{
+            return {
+              weight: 3.5,
+              opacity: 1,
+              fillColor: color(prob_gerada),
+              fillOpacity: 0.9,
+              color: '#d01c8b'
+            };
+          }
+        }else{
+              return {
+                weight: 0.5,
+                opacity: 1,
+                fillColor: color(prob_gerada),
+                color: 'black',
+                fillOpacity: 0.9
+              };
+          }
+    },
+    onEachFeature: function (feature, layer) {
+          layer.on('mouseover', function (e) {
+              highlightFeature(e);
+          });
+          layer.on('mouseout', function (e) {
+              layerPerguntas.resetStyle(e.target);
+          });
+      }
+  }).addTo(mapVisPerguntas);
+  if(amostraN!=undefined){
+    infoVisPerguntas.update = function (props) {
+      this._div.innerHTML= '<h5>Informações gerais.</h5>' +  (props ?'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>': ' Amostra Nº'+amostraN+'.');
+    };
+  }else{
+    infoVisPerguntas.update = function (props) {
+      this._div.innerHTML= infoprops(props);
+    };
+  }
+  infoVisPerguntas.addTo(mapVisPerguntas);
 }

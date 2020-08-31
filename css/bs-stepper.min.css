@@ -12,7 +12,6 @@
 	align-items: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	padding: 20px;
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1.5;
@@ -27,7 +26,10 @@
 	user-select: none;
 	background-color: transparent;
 	border: none;
-	border-radius: .25rem;
+	margin-top: 30%;
+	margin-bottom: 30%;
+	border-radius: 0rem;
+	margin-right: -50px;
 	transition: background-color .15s ease-out, color .15s ease-out
 }
 
@@ -54,7 +56,7 @@
 	.bs-stepper .step-trigger {
 		-ms-flex-direction: column;
 		flex-direction: column;
-		padding: 10px
+		padding: 0px
 	}
 
 }
@@ -68,7 +70,8 @@
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-align: center;
-	align-items: center
+	align-items: center;
+	margin-left:0%
 }
 
 @media (max-width:520px) {
@@ -106,11 +109,11 @@
 	width: 2em;
 	height: 2em;
 	padding: .5em 0;
-	margin: .25rem;
 	line-height: 1em;
 	color: #fff;
 	background-color: #6c757d;
-	border-radius: 1em
+	border-radius: 1em;
+	margin-right: 0px;
 }
 
 .bs-stepper-header .active .bs-stepper-circle  {

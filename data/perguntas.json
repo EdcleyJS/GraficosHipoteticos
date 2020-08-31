@@ -1,379 +1,488 @@
 [
   {
-    "id": "001C",
-    "question_text": "Qual a probabilidade de chover em Recife(Rosa) abaixo de 100mm?",
+    "id": "01",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      "Recife"
     ],
-    "answer": "47",
-    "distance": {},
+    "answer": "59",
+    "distance": "Near 1",
     "variance": {},
     "size": {}
   },
   {
-    "id": "002C",
-    "question_text": "Qual a probabilidade de chover em Jaboatão dos Guararapes(Rosa) acima de 100mm?",
+    "id": "02",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      "Jaboatão dos Guararapes"
     ],
-    "answer": "56",
-    "distance": {},
+    "answer": "24",
+    "distance": "Near 2",
     "variance": {},
     "size": {}
   },
   {
-    "id": "003C",
-    "question_text": "Qual a probabilidade de chover em São Lourenço da Mata(Rosa) entre 50mm e 150mm?",
+    "id": "03",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5"
     ],
     "highlights": [
-      "São Lourenço da Mata"
     ],
-    "answer": "33",
-    "distance": {},
+    "answer": "96",
+    "distance": "Near 3",
     "variance": {},
     "size": {}
   },
   {
-    "id": "004C",
-    "question_text": "Entre Ipojuca(Rosa) e Cabo de Santo Agostinho(Azul), qual das duas cidades é mais provável de chover abaixo de 100mm?",
+    "id": "04",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "Ipojuca",
-      "Cabo de Santo Agostinho"
     ],
     "highlights": [
-      "Ipojuca",
-      "Cabo de Santo Agostinho"
     ],
-    "answer": "Ipojuca",
-    "distance": "Short",
+    "answer": "37",
+    "distance": "Near 4",
     "variance": {},
     "size": {}
   },
   {
-    "id": "005C",
-    "question_text": "Qual é a probabilidade de chover menos em Ipojuca(Rosa) do que no Cabo de Santo Agostinho(Azul)?",
+    "id": "05",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      "Ipojuca",
-      "Cabo de Santo Agostinho"
     ],
-    "answer": "67",
-    "distance": "Short",
+    "answer": "59",
+    "distance": "Medium 1",
     "variance": {},
     "size": {}
   },
   {
-    "id": "006C",
-    "question_text": "Qual é a probabilidade de chover menos em Recife(Rosa) do que em Santa Cruz(Azul)?",
+    "id": "06",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      "Recife",
-      "Santa Cruz"
     ],
-    "answer": "14",
-    "distance": "Long",
+    "answer": "24",
+    "distance": "Medium 2",
     "variance": {},
     "size": {}
   },
   {
-    "id": "007C",
-    "question_text": "Qual é a probabilidade de chover menos em Jataúba(Rosa) do que em Petrolândia(Azul)?",
+    "id": "07",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      "Jataúba",
-      "Petrolândia"
     ],
-    "answer": "64",
-    "distance": {},
-    "variance": "Low",
-    "size": {}
-  },
-  {
-    "id": "008C",
-    "question_text": "Qual é a probabilidade de chover menos em Tacaratú(Rosa) do que em Araripina(Azul)?",
-    "op": [
-    ],
-    "highlights": [
-      "Tacaratu",
-      "Araripina"
-    ],
-    "answer": "47",
-    "distance": {},
-    "variance": "High",
-    "size": {}
-  },
-  {
-    "id": "009C",
-    "question_text": "Qual é a probabilidade de chover menos em Saloá(Rosa) do que em Pombos(Azul)?",
-    "op": [
-    ],
-    "highlights": [
-      "Saloá",
-      "Pombos"
-    ],
-    "answer": "56",
-    "distance": {},
-    "variance": {},
-    "size": "Small"
-  },
-  {
-    "id": "010C",
-    "question_text": "Qual é a probabilidade de chover menos em Sertânia(Rosa) do que em Parnamirim(Azul)?",
-    "op": [
-    ],
-    "highlights": [
-      "Sertânia",
-      "Parnamirim"
-    ],
-    "answer": "53",
-    "distance": {},
-    "variance": {},
-    "size": "Large"
-  },
-  {
-    "id": "011C",
-    "question_text": "Selecione na lista abaixo o nome da cidade que tem a maior probabilidade de chover abaixo de 100mm?",
-    "op": [
-      "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
-      "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
-    ],
-    "highlights": [
-      ""
-    ],
-    "answer": "Jatobá",
-    "distance": {},
+    "answer": "96",
+    "distance": "Medium 3",
     "variance": {},
     "size": {}
   },
   {
-    "id": "012C",
-    "question_text": "Selecione na lista abaixo o nome da cidade que tem a menor probabilidade de chover abaixo de 100mm?",
+    "id": "08",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "Abreu e Lima", "Afogados da Ingazeira", "Afrânio", "Agrestina", "Água Preta", "Águas Belas", "Alagoinha", "Aliança", "Altinho", "Amaraji", "Angelim", "Araçoiaba", "Araripina", "Arcoverde", "Barra de Guabiraba", "Barreiros", "Belém de Maria", "Belém de São Francisco", "Belo Jardim", "Betânia", "Bezerros", "Bodocó", "Bom Conselho", "Bom Jardim", "Bonito", "Brejão", "Brejinho", "Brejo da Madre de Deus", "Buenos Aires", "Buíque", "Cabo de Santo Agostinho", "Cabrobó", "Cachoeirinha", "Caetés", "Calçado", "Calumbi", "Camaragibe", "Camocim de São Félix", "Camutanga", "Canhotinho", "Capoeiras", "Carnaíba", "Carnaubeira da Penha", "Carpina", "Caruaru", "Casinhas", "Catende", "Cedro", "Chã de Alegria", "Chã Grande", "Condado", "Correntes", "Cortês", "Cumaru", "Cupira", "Custódia", "Dormentes", "Escada", "Exu", "Feira Nova", "Ferreiros", "Flores", "Floresta", "Frei Miguelinho", "Gameleira", "Garanhuns", "Glória do Goitá", "Goiana", "Granito", "Gravatá", "Iati", "Ibimirim", "Ibirajuba", "Igarassu", "Iguaraci", "Inajá", "Ingazeira", "Ipojuca", "Ipubi", "Itacuruba", "Itaíba", "Ilha de Itamaracá", "Itambé", "Itapetim", "Itapissuma", "Itaquitinga", "Jaboatão dos Guararapes", "Jaqueira", "Jataúba", "Jatobá", "João Alfredo", "Joaquim Nabuco", "Jucati", "Jupi", "Jurema", "Lagoa do Carro", "Lagoa do Itaenga", "Lagoa do Ouro", "Lagoa dos Gatos", "Lagoa Grande",
-      "Lajedo", "Limoeiro", "Macaparana", "Machados", "Manari", "Maraial", "Mirandiba", "Moreno", "Nazaré da Mata", "Olinda", "Orobó", "Orocó", "Ouricuri", "Palmares", "Palmeirina", "Panelas", "Paranatama", "Parnamirim", "Passira", "Paudalho", "Paulista", "Pedra", "Pesqueira", "Petrolândia", "Petrolina", "Poção", "Pombos", "Primavera", "Quipapá", "Quixaba", "Recife", "Riacho das Almas", "Ribeirão", "Rio Formoso", "Sairé", "Salgadinho", "Salgueiro", "Saloá", "Sanharó", "Santa Cruz", "Santa Cruz da Baixa Verde", "Santa Cruz do Capibaribe", "Santa Filomena", "Santa Maria da Boa Vista", "Santa Maria do Cambucá", "Santa Terezinha", "São Benedito do Sul", "São Bento do Una", "São Caetano", "São João", "São Joaquim do Monte", "São José da Coroa Grande", "São José do Belmonte", "São José do Egito", "São Lourenço da Mata", "São Vicente Ferrer", "Serra Talhada", "Serrita", "Sertânia", "Sirinhaém", "Moreilândia", "Solidão", "Surubim", "Tabira", "Tacaimbó", "Tacaratu", "Tamandaré", "Taquaritinga do Norte", "Terezinha", "Terra Nova", "Timbaúba", "Toritama", "Tracunhaém", "Trindade", "Triunfo", "Tupanatinga", "Tuparetama", "Venturosa", "Verdejante", "Vertente do Lério", "Vertentes", "Vicência", "Vitória de Santo Antão", "Xexéu"
     ],
     "highlights": [
-      ""
     ],
-    "answer": "Amaraji",
-    "distance": {},
+    "answer": "37",
+    "distance": "Medium 4",
     "variance": {},
     "size": {}
   },
   {
-    "id": "013C",
-    "question_text": "Estime qual a média de chuvas na cidade de Caruaru(Rosa)?",
-    "op": [
-      ""
-    ],
-    "highlights": [
-      "Caruaru"
-    ],
-    "answer": "50",
-    "distance": {},
-    "variance": {},
-    "size": {}
-  },
-    {
-    "id": "014T",
-    "question_text": "Qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar abaixo de 18000?",
+    "id": "09",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      246
     ],
-    "answer": "75",
-    "distance": {},
+    "answer": "59",
+    "distance": "Far 1",
     "variance": {},
     "size": {}
   },
   {
-    "id": "015T",
-    "question_text": "Qual a probabilidade de o número de corridas de táxis na área West Chelsea/Hudson Yards(Rosa) estar acima de 20000?",
+    "id": "10",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      246
+      
+      
     ],
-    "answer": "8",
-    "distance": {},
+    "answer": "24",
+    "distance": "Far 2",
     "variance": {},
     "size": {}
   },
   {
-    "id": "016T",
-    "question_text": "Qual a probabilidade de o número de corridas de táxis na área Times Sq/Theatre District(Rosa) estar entre 18000 e 35000?",
+    "id": "11",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      230
+      
+      
     ],
-    "answer": "33",
-    "distance": {},
-    "variance": {},
-    "size": {}
-  },
-    {
-    "id": "017T",
-    "question_text": "Entre Midtown South(Rosa) e Murray Hill(Azul), qual das duas áreas é mais provável que o número de corridas de táxis esteja abaixo de 27000?",
-    "op": [
-      "Midtown South",
-      "Murray Hill"
-    ],
-    "highlights": [
-      164,
-      170
-    ],
-    "answer": "Midtown South",
-    "distance": {},
+    "answer": "96",
+    "distance": "Far 3",
     "variance": {},
     "size": {}
   },
   {
-    "id": "018T",
-    "question_text": "Qual é a probabilidade do número de corridas de táxis em Clinton East(Rosa) ser menor que Times Sq/Theatre District(Azul)?",
+    "id": "12",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "Clinton East",
-      "Times Sq/Theatre District"
     ],
     "highlights": [
-      48,
-      230
+      
+      
     ],
-    "answer": "42",
-    "distance": "Short",
+    "answer": "37",
+    "distance": "Far 4",
     "variance": {},
     "size": {}
   },
   {
-    "id": "019T",
-    "question_text": "Qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Midtown North(Azul)?",
+    "id": "13",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "West Village",
-      "Midtown North"
     ],
     "highlights": [
-      249,
-      163
+      
+      
     ],
-    "answer": "25",
-    "distance": "Long",
+    "answer": "59",
+    "distance": {},
     "variance": {},
+    "size": "Small 1"
+  },
+  {
+    "id": "14",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "24",
+    "distance": {},
+    "variance": {},
+    "size": "Small 2"
+  },
+  {
+    "id": "15",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "96",
+    "distance": {},
+    "variance": {},
+    "size": "Small 3"
+  },
+  {
+    "id": "16",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "37",
+    "distance": {},
+    "variance": {},
+    "size": "Small 4"
+  },
+  {
+    "id": "17",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "59",
+    "distance": {},
+    "variance": {},
+    "size": "Medium 1"
+  },
+  {
+    "id": "18",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "24",
+    "distance": {},
+    "variance": {},
+    "size": "Medium 2"
+  },
+  {
+    "id": "19",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "96",
+    "distance": {},
+    "variance": {},
+    "size": "Medium 3"
+  },
+  {
+    "id": "20",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "37",
+    "distance": {},
+    "variance": {},
+    "size": "Medium 4"
+  },
+  {
+    "id": "21",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "59",
+    "distance": {},
+    "variance": {},
+    "size": "Large 1"
+  },
+  {
+    "id": "22",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "24",
+    "distance": {},
+    "variance": {},
+    "size": "Large 2"
+  },
+  {
+    "id": "23",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "96",
+    "distance": {},
+    "variance": {},
+    "size": "Large 3"
+  },
+  {
+    "id": "24",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "37",
+    "distance": {},
+    "variance": {},
+    "size": "Large 4"
+  },
+  {
+    "id": "25",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "59",
+    "distance": {},
+    "variance": "Small 1",
     "size": {}
   },
   {
-    "id": "020T",
-    "question_text": "Qual é a probabilidade do número de corridas de táxis em Lenox Hill West(Rosa) ser menor que Gramercy(Azul)?",
+    "id": "26",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      141,
-      107
+      
+      
     ],
-    "answer": "83",
+    "answer": "24",
     "distance": {},
-    "variance": "Low",
+    "variance": "Small 2",
     "size": {}
   },
   {
-    "id": "021T",
-    "question_text": "Qual é a probabilidade do número de corridas de táxis em West Village(Rosa) ser menor que Murray Hill(Azul)?",
+    "id": "27",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
     ],
     "highlights": [
-      249,
-      170
+      
+      
     ],
-    "answer": "92",
+    "answer": "96",
     "distance": {},
-    "variance": "High",
+    "variance": "Small 3",
     "size": {}
   },
   {
-    "id": "022T",
-    "question_text": "Qual é a probabilidade do número de corridas de táxis no Central Park(Rosa) ser menor que em Greenwich Village North(Azul)?",
+    "id": "28",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "Central Park",
-      "Greenwich Village North"
     ],
     "highlights": [
-      43,
-      113
+      
+      
     ],
-    "answer": "75",
+    "answer": "37",
     "distance": {},
-    "variance": {},
-    "size": "Small"
-  },
-  {
-    "id": "023T",
-    "question_text": "Qual é a probabilidade do número de corridas de táxis em Union Sq(Rosa) ser menor que em Midtown Center(Azul)?",
-    "op": [
-      "Union Sq",
-      "Midtown Center"
-    ],
-    "highlights": [
-      234,
-      161
-    ],
-    "answer": "42",
-    "distance": {},
-    "variance": {},
-    "size": "Large"
-  },
-  {
-    "id": "024T",
-    "question_text": "Selecione na lista abaixo o nome da área com maior probabilidade de ter um número de corridas de táxis acima de 34000?",
-    "op": [
-      "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
-    ],
-    "highlights": [
-      ""
-    ],
-    "answer": "Penn Station/Madison Sq West",
-    "distance": {},
-    "variance": {},
+    "variance": "Small 4",
     "size": {}
   },
   {
-    "id": "025T",
-    "question_text": "Selecione na lista abaixo o nome da área com menor probabilidade de ter um número de corridas de táxis acima de 3500?",
+    "id": "29",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      "Central Park", "Clinton East", "Clinton West", "East Chelsea", "East Village", "Flatiron", "Garment District", "Gramercy", "Greenwich Village North", "Kips Bay", "Lenox Hill East", "Lenox Hill West", "Lincoln Square East", "Meatpacking/West Village West", "Midtown Center", "Midtown East", "Midtown North", "Midtown South", "Murray Hill", "Penn Station/Madison Sq West", "Roosevelt Island", "Stuy Town/Peter Cooper Village", "Sutton Place/Turtle Bay North", "Times Sq/Theatre District", "UN/Turtle Bay South", "Union Sq", "Upper East Side South", "West Chelsea/Hudson Yards", "West Village"
     ],
     "highlights": [
-      ""
+      
+      
     ],
-    "answer": "Roosevelt Island",
+    "answer": "59",
     "distance": {},
-    "variance": {},
+    "variance": "Medium 1",
     "size": {}
   },
   {
-    "id": "026T",
-    "question_text": "Estime qual é o número médio de corridas de táxis na área Gramercy(Rosa)?",
+    "id": "30",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
     "op": [
-      ""
     ],
     "highlights": [
-      107
+      
+      
     ],
-    "answer": "25000",
+    "answer": "24",
     "distance": {},
-    "variance": {},
+    "variance": "Medium 2",
+    "size": {}
+  },
+  {
+    "id": "31",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "96",
+    "distance": {},
+    "variance": "Medium 3",
+    "size": {}
+  },
+  {
+    "id": "32",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "37",
+    "distance": {},
+    "variance": "Medium 4",
+    "size": {}
+  },
+  {
+    "id": "33",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "59",
+    "distance": {},
+    "variance": "Large 1",
+    "size": {}
+  },
+  {
+    "id": "34",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "24",
+    "distance": {},
+    "variance": "Large 2",
+    "size": {}
+  },
+  {
+    "id": "35",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "96",
+    "distance": {},
+    "variance": "Large 3",
+    "size": {}
+  },
+  {
+    "id": "36",
+    "question_text": "Qual é a probabilidade de um valor da região destacada em Rosa ser maior do que o valor da região destacada em Laranja?",
+    "op": [
+    ],
+    "highlights": [
+      
+      
+    ],
+    "answer": "37",
+    "distance": {},
+    "variance": "Large 4",
     "size": {}
   }
 ]
