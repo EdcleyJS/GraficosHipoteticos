@@ -18,6 +18,7 @@ var distributionfile;
 var distribution,distribution_data;
 
 function Start_Update_data(){
+  hops=false;
   if(!polyfile) {
     polyfile = "./data/polygons.geojson";
   }else{
@@ -51,6 +52,7 @@ function Start_Update_data(){
       return [dist[key]];
     });
   });
+  hops=true;
 }
 var infoVis02=L.control();
 var legendVis02 = L.control({position: 'bottomright'});

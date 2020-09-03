@@ -70,14 +70,12 @@ $(document).ready(function () {
 			   		stepper2.next();
 			   		$(this).parent().parent().removeClass("was-validated");
 			   		var id= $(this).parent().next().find('div >div > div> ').siblings()[0].id;
-			   		hops=false;
 			   		proxima_view(id);
 			   		Start_Update_data();
 			    	setTimeout(function(){
 				    	VisPerguntas();
 				    	bring_front(mapVisPerguntas);
 				    	mapVisPerguntas.invalidateSize();
-				    	hops=true;
 			    	},400);
 				$(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
 				d2 = new Date();
@@ -105,14 +103,12 @@ $(document).ready(function () {
 	    		$('#vis').css('display','');
 				if($('#4Form').is(':visible')){
 					var id= $('#4Form > div.active > div > div > input')[0].id.substring(4,6);
-					hops=false;
 			   		proxima_view(id);
 			   		Start_Update_data();
 			    	setTimeout(function(){
 				    	VisPerguntas();
 				    	bring_front(mapVisPerguntas);
 				    	mapVisPerguntas.invalidateSize();
-				    	hops=true;
 			    	},400);
 				}
 			}else{
