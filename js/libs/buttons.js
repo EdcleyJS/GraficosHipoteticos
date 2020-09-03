@@ -53,6 +53,16 @@ $(document).ready(function () {
     		bring_front(mapVis02);
     		mapVis02.invalidateSize();
     	}
+    	if(event.detail.indexStep==4){
+    		//console.log(event.detail.from);
+	    	if($('#pergunta_text')[0].checkValidity()==false || $('#pergunta_text')[0].value>60 || $('#pergunta_text')[0].value<40){
+	    		$('#pergunta_text')[0].value="";
+				$('#FormTeste')[0].classList.add("was-validated");
+				stepper0.to(4);
+			}else{
+				$('#FormTeste').removeClass("was-validated");
+			}
+    	}
 	});
 	// VALIDA AS RESPOSTAS DOS FORMS, DESTACA AS ÁREAS PERGUNTADAS E SETA OS VALORES DE TEMPO E CLICK PARA CADA PERGUNTA.
 	$(".btn-next-form").click(function() {
