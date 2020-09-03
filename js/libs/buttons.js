@@ -70,13 +70,14 @@ $(document).ready(function () {
 			   		stepper2.next();
 			   		$(this).parent().parent().removeClass("was-validated");
 			   		var id= $(this).parent().next().find('div >div > div> ').siblings()[0].id;
+			   		etapa_perguntas=true;
 			   		proxima_view(id);
 			   		Start_Update_data();
-			    	setTimeout(function(){
+			    	/*setTimeout(function(){
 				    	VisPerguntas();
 				    	bring_front(mapVisPerguntas);
 				    	mapVisPerguntas.invalidateSize();
-			    	},400);
+			    	},400);*/
 				$(this).parent().find('.form-group > div >.clicks')[0].value = clicks;
 				d2 = new Date();
 				diff = Math.abs(d1-d2)/1000;
@@ -103,13 +104,14 @@ $(document).ready(function () {
 	    		$('#vis').css('display','');
 				if($('#4Form').is(':visible')){
 					var id= $('#4Form > div.active > div > div > input')[0].id.substring(4,6);
+					etapa_perguntas=true;
 			   		proxima_view(id);
 			   		Start_Update_data();
-			    	setTimeout(function(){
+			    	/*setTimeout(function(){
 				    	VisPerguntas();
 				    	bring_front(mapVisPerguntas);
 				    	mapVisPerguntas.invalidateSize();
-			    	},400);
+			    	},400);*/
 				}
 			}else{
 				stepper0.next();

@@ -16,7 +16,7 @@ var url = new URL(url_string);
 var polyfile,polygon;
 var distributionfile;
 var distribution,distribution_data;
-
+var etapa_perguntas=false;
 function Start_Update_data(){
   hops=false;
   if(!polyfile) {
@@ -52,6 +52,11 @@ function Start_Update_data(){
       return [dist[key]];
     });
   });
+  if(etapa_perguntas==true){
+    VisPerguntas();
+    bring_front(mapVisPerguntas);
+    mapVisPerguntas.invalidateSize();
+  }
   hops=true;
 }
 var infoVis02=L.control();
