@@ -73,6 +73,8 @@ function recaptcha_callback(){
   $('#duracaototal').val(duracao);
   $('#duracaotutorial').val(duracaotutorial);
   $('#duracaoperguntas').val(duracaoPerguntas);
+  var valor= $('#pergunta_text').val();
+  $('#PGT_TESTE').val(valor);
 
   $('#5Form').submit();
   $('#feedback').val($('#feedback2').val());
