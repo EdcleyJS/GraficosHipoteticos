@@ -1,6 +1,11 @@
 var left=200,right=500,database,interOn,opcoes=[],LayerRange,layerTuto4,dataset,max,featurename,selecionados=[],medias=[],hops=true;
 var mapVis02 = L.map('vis02',{zoomControl: false,preferCanvas: true,attributionControl: false,crs: L.CRS.Simple}).setView([0.203125,0.6640625], 6);
 var mapVisPerguntas = L.map('visPerguntas',{zoomControl: false,preferCanvas: true,attributionControl: false,crs: L.CRS.Simple}).setView([0.203125,0.6640625], 6);
+
+mapVis02.dragging.disable();
+mapVisPerguntas.dragging.disable();
+
+
 mapVis02.dragging.disable();
 mapVis02.touchZoom.disable();
 mapVis02.doubleClickZoom.disable();
